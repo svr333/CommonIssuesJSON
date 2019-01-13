@@ -1,10 +1,9 @@
-version: CommonIssuesJson-V1.{build}
+version: CommonIssuesJson-1.{build}
 image: Visual Studio 2017
 clone_folder: C:\Projects\CommonIssuesJSON
 dotnet_csproj:
   patch: true
   file: '**\*.csproj'
-  version: '{version}'
   package_version: '{version}'
 before_build:
 - cmd: dotnet restore

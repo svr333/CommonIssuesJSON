@@ -23,13 +23,13 @@ Install-Package CommonIssues.JsonParser -Version 1.0.0
 
 ```cs
 //Create a new CommonIssuesClient
-var client = new CIClient();
+var commonIssuesClient = new CommonIssuesClient();
 
 //Get the current List of Common Issues
-var issues = await client.GetCommonIssuesAsync();
+var issues = await commonIssuesClient.GetCommonIssuesAsync();
 
 //Search for a specific issue (Is not case sensitive)
-var search = await client.SearchCommonIssuesAsync("SEARCH HERE");
+var search = await commonIssuesClient.SearchCommonIssuesAsync("SEARCH HERE");
 ```
 
 ---

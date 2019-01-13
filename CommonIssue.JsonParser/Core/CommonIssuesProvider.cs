@@ -1,14 +1,11 @@
-﻿using CI.JsonParser.Core.Interfaces;
-using CI.JsonParser.Entities;
+﻿using CommonIssues.JsonParser.Core.Interfaces;
+using CommonIssues.JsonParser.Entities;
 using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace CI.JsonParser.Core
+namespace CommonIssues.JsonParser.Core
 {
     public class CommonIssuesProvider : ICommonIssuesProvider
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CI.JsonParser.Entities
+namespace CommonIssues.JsonParser.Entities
 {
     public class CommonIssue
     {

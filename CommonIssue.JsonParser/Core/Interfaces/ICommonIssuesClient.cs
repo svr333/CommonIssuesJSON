@@ -1,8 +1,8 @@
-﻿using CI.JsonParser.Entities;
+﻿using CommonIssues.JsonParser.Entities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace CI.JsonParser.Interfaces
+namespace CommonIssues.JsonParser.Interfaces
 {
     public interface ICommonIssuesClient
     {

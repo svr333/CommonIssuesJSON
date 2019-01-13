@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CI.JsonParser.Core;
-using CI.JsonParser.Entities;
-using CI.JsonParser.Interfaces;
+using CommonIssues.JsonParser.Core;
+using CommonIssues.JsonParser.Entities;
+using CommonIssues.JsonParser.Interfaces;
 
-namespace CI.JsonParser
+namespace CommonIssues.JsonParser
 {
     public class CommonIssuesClient : ICommonIssuesClient
     {

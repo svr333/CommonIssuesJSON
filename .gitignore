@@ -1,5 +1,5 @@
 
-src/CommonIssue.JsonParser/bin/*
-src/CommonIssue.JsonParser/obj/*
-src/CI.JsonParser.ConsoleApp*
-src/.vs*
+CommonIssue.JsonParser/bin/*
+CommonIssue.JsonParser/obj/*
+CI.JsonParser.ConsoleApp*
+.vs*

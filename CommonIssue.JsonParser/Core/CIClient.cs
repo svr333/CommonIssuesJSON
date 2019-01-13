@@ -14,7 +14,7 @@ namespace CI.JsonParser
         public async Task<CommonIssue> SearchCommonIssuesAsync(string search)
         {
             var issues = await Json.Deserialize();
-            return issues.Where(x => x.Aliases.ConvertAll(a => a.ToLower()).Contains(search)).FirstOrDefault();
+            return issues.Where(x => x.Aliases.ConvertAll(a => a.ToLower()).Contains(search.ToLower())).FirstOrDefault();
         }
 
         public async Task<List<CommonIssue>> GetCommonIssuesAsync()

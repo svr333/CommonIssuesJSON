@@ -1,5 +1,6 @@
 version: CommonIssuesJson-V1.0{build}
 image: Visual Studio 2017
+clone_folder: C:\Projects\CommonIssuesJSON
 dotnet_csproj:
   patch: true
   file: '**\*.csproj'
@@ -11,3 +12,11 @@ build:
   verbosity: minimal
 after_build:
 - cmd: dotnet build
+artifacts:
+- path: '**\*.nupkg'
+  name: CommonIssuesJSON
+deploy:
+- provider: NuGet
+  api_key:
+    secure: 9OYhZ0NK9boRNELSUtp986tMKHUYPoG+LGPCcS6MWNZcAxmgJeUfSfqpiXUI6BVh
+artifact: CommonIssuesJSON

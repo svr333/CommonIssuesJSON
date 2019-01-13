@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CI.JsonParser.Entities
+﻿namespace CI.JsonParser.Entities
 {
     public class Config
     {

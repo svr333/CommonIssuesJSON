@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace CI.JsonParser.Interfaces
 {
-    public interface ICICLient
+    public interface ICommonIssuesClient
     {
         Task<List<CommonIssue>> GetCommonIssuesAsync();
         Task<CommonIssue> SearchCommonIssuesAsync(string name);

@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace CI.JsonParser.Core
 {
-    public class Json : IJson
+    public class CommonIssuesProvider : ICommonIssuesProvider
     {
         private readonly string JsonUrl = "https://raw.githubusercontent.com/DraxCodes/common-issues/master/CommonIssue.json";
 
-        public async Task<List<CommonIssue>> Deserialize()
+        public async Task<List<CommonIssue>> RetrieveData()
         {
             var rawData = await GetRawData();
             return JsonConvert.DeserializeObject<List<CommonIssue>>(rawData);

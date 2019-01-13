@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 
 namespace CI.JsonParser.Core.Interfaces
 {
-    public interface IJson
+    public interface ICommonIssuesProvider
     {
-        Task<List<CommonIssue>> Deserialize();
+        Task<List<CommonIssue>> RetrieveData();
     }
 }

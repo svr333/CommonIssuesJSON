@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CI.JsonParser", "CommonIssue.JsonParser\CI.JsonParser.csproj", "{C553DF46-5FCF-48FE-A453-4634880C0B48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonIssues.JsonParser", "CommonIssue.JsonParser\CommonIssues.JsonParser.csproj", "{C553DF46-5FCF-48FE-A453-4634880C0B48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

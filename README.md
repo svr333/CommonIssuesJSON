@@ -9,13 +9,13 @@
 #### Using DotNet CLI
 
 ```bash
-dotnet add package CI.JsonParser --version 1.0.0 
+dotnet add package CommonIssues.JsonParser --version 1.0.0 
 ```
 
 #### Using Package Manager
 
 ```bash
-Install-Package CI.JsonParser -Version 1.0.0
+Install-Package CommonIssues.JsonParser -Version 1.0.0
 ```
 
 

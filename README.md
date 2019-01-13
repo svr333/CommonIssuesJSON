@@ -9,13 +9,13 @@
 #### Using DotNet CLI
 
 ```bash
-dotnet add package CI.JsonParser --version 1.0.0 
+dotnet add package CommonIssues.JsonParser --version 1.0.0 
 ```
 
 #### Using Package Manager
 
 ```bash
-Install-Package CI.JsonParser -Version 1.0.0
+Install-Package CommonIssues.JsonParser -Version 1.0.0
 ```
 
 
@@ -23,13 +23,13 @@ Install-Package CI.JsonParser -Version 1.0.0
 
 ```cs
 //Create a new CommonIssuesClient
-var client = new CIClient();
+var commonIssuesClient = new CommonIssuesClient();
 
 //Get the current List of Common Issues
-var issues = await client.GetCommonIssuesAsync();
+var issues = await commonIssuesClient.GetCommonIssuesAsync();
 
 //Search for a specific issue (Is not case sensitive)
-var search = await client.SearchCommonIssuesAsync("SEARCH HERE");
+var search = await commonIssuesClient.SearchCommonIssuesAsync("SEARCH HERE");
 ```
 
 ---

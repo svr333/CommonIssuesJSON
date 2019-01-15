@@ -8,5 +8,6 @@ namespace CommonIssues.JsonParser.Interfaces
     {
         Task<List<CommonIssue>> GetCommonIssuesAsync();
         Task<CommonIssue> SearchCommonIssuesAsync(string name);
+        Task<List<CommonIssue>> GetPartialMatches(string search);
     }
 }

@@ -9,13 +9,13 @@
 #### Using DotNet CLI
 
 ```bash
-dotnet add package CommonIssues.JsonParser --version 1.0.3 
+dotnet add package CommonIssues.JsonParser --version 1.0.5 
 ```
 
 #### Using Package Manager
 
 ```bash
-Install-Package CommonIssues.JsonParser -Version 1.0.3
+Install-Package CommonIssues.JsonParser -Version 1.0.5
 ```
 
 
@@ -30,6 +30,9 @@ var issues = await commonIssuesClient.GetCommonIssuesAsync();
 
 //Search for a specific issue (Is not case sensitive)
 var search = await commonIssuesClient.SearchCommonIssuesAsync("SEARCH HERE");
+
+//Search for Partial macthes (Returns a max of top 4 results)
+var partialSearch = await client.GetPartialMatches("SEARCH HERE");
 ```
 
 ---

@@ -9,7 +9,7 @@ namespace CommonIssues.JsonParser.Core
 {
     public class CommonIssuesProvider : ICommonIssuesProvider
     {
-        private readonly string JsonUrl = "https://github.com/discord-bot-tutorial/common-issues/blob/master/CommonIssue.json";
+        private readonly string JsonUrl = "https://raw.githubusercontent.com/discord-bot-tutorial/common-issues/master/CommonIssue.json";
 
         public async Task<List<CommonIssue>> RetrieveData()
         {

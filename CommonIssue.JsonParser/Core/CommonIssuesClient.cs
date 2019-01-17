@@ -19,7 +19,7 @@ namespace CommonIssues.JsonParser
         public async Task<CommonIssue> SearchCommonIssuesAsync(string search)
         {
             var issues = await _CommonIssuesProvider.RetrieveData();
-            return issues.FirstOrDefault(x => x.Name == search);
+            return issues.FirstOrDefault(x => x.Name.ToLower() == search.ToLower());
         }
 
         /// <summary>

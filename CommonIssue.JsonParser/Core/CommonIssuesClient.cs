@@ -18,17 +18,8 @@ namespace CommonIssues.JsonParser
         /// <returns></returns>
         public async Task<CommonIssue> SearchCommonIssuesAsync(string search)
         {
-            var issues = await _CommonIssuesProvider.RetrieveData();
+            var issues = await GetCommonIssuesAsync();
             return issues.FirstOrDefault(x => x.Name.ToLower() == search.ToLower());
-        }
-
-        /// <summary>
-        /// Returns all of the issues from the CommonIssues Repo
-        /// </summary>
-        /// <returns>List Of CommonIssues</returns>
-        public async Task<List<CommonIssue>> GetCommonIssuesAsync()
-        {
-            return await _CommonIssuesProvider.RetrieveData();
         }
 
         /// <summary>
@@ -38,10 +29,19 @@ namespace CommonIssues.JsonParser
         /// <returns>List of CommonIssues, Max 4</returns>
         public async Task<List<CommonIssue>> GetPartialMatches(string search)
         {
-            var issues = await _CommonIssuesProvider.RetrieveData();
+            var issues = await GetCommonIssuesAsync();
             return issues.FindAll(x =>
                 x.Aliases.Any(a =>
                 a.ToLower().Contains(search.ToLower()))).Take(4).ToList();
+        }
+
+        /// <summary>
+        /// Returns all of the issues from the CommonIssues Repo
+        /// </summary>
+        /// <returns>List Of CommonIssues</returns>
+        public async Task<List<CommonIssue>> GetCommonIssuesAsync()
+        {
+            return await _CommonIssuesProvider.RetrieveData<CommonIssue>();
         }
     }
 }

@@ -11,10 +11,10 @@ namespace CommonIssues.JsonParser.Core
     {
         private readonly string JsonUrl = "https://raw.githubusercontent.com/discord-bot-tutorial/common-issues/master/CommonIssue.json";
 
-        public async Task<List<CommonIssue>> RetrieveData()
+        public async Task<List<T>> RetrieveData<T>()
         {
             var rawData = await GetRawData();
-            return JsonConvert.DeserializeObject<List<CommonIssue>>(rawData);
+            return JsonConvert.DeserializeObject<List<T>>(rawData);
         }
 
         private async Task<string> GetRawData()

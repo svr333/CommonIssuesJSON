@@ -6,6 +6,6 @@ namespace CommonIssues.JsonParser.Core.Interfaces
 {
     public interface ICommonIssuesProvider
     {
-        Task<List<CommonIssue>> RetrieveData();
+        Task<List<T>> RetrieveData<T>();
     }
 }

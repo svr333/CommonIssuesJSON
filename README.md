@@ -43,7 +43,7 @@ Create a new issue and i'll see if I can fix it.
 
 ## Contributing
 
-If you want to contribute, make a fork and PR any changes you think it may need. Ensure you gice as much info as possible for the PR you're making.
+If you want to contribute, make a fork and PR any changes you think it may need. Ensure you give as much info as possible for the PR you're making.
 
 ---
 
